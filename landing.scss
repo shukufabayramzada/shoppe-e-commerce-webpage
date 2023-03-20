@@ -1,0 +1,442 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $common-font;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    max-width: 1248px;
+    margin-left: auto;
+    margin-right: auto;
+
+    header {
+        padding-top: 66px;
+        margin-bottom: 50px;
+
+        .headercontainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .linkline {
+                display: flex;
+                flex-direction: row;
+
+                nav {
+                    display: flex;
+                    gap: 64px;
+
+                    .nav-link {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 27px;
+                        color: $firstfontcolor;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .line {
+                border: 1px solid #707070;
+                transform: rotate(180deg);
+                margin-left: 48px;
+                margin-right: 48px;
+            }
+
+
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 39px;
+
+                button {
+                    width: 20px;
+                    border: none;
+                    background-color: transparent;
+                }
+
+
+            }
+        }
+    }
+
+    .hero-container {
+        width: 100%;
+        height: 646px;
+        background: url('./assests/Img 01.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+
+        .hero-section {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 226px;
+            padding-left: 44px;
+            color: $thirdfontcolor;
+
+            .about-section {
+                padding-bottom: 16px;
+                width: 352px;
+                line-height: 43px;
+                font-weight: 500;
+                font-size: 33px;
+            }
+
+            .price {
+                width: 395px;
+                line-height: 35px;
+                font-weight: 400;
+                font-size: 26px;
+                padding-top: 16px;
+            }
+
+            button {
+                width: 193px;
+                height: 53px;
+                border: 2px solid $thirdfontcolor;
+                border-radius: 6px;
+                margin-top: 48px;
+                font-weight: 700;
+                font-size: 20px;
+                background: transparent;
+                color: $thirdfontcolor;
+            }
+
+        }
+
+        .sliders {
+            display: flex;
+            flex-direction: row;
+            padding-left: 570px;
+            align-items: center;
+            gap: 13.71px;
+            padding-top: 170px;
+
+        }
+
+        button.ellipse-1 {
+            width: 16px;
+            height: 16px;
+            border: 1px solid $thirdfontcolor;
+            border-radius: 50%;
+            background-color: transparent;
+
+        }
+
+        button.ellipse-2 {
+            width: 9.14px;
+            height: 9.14px;
+            border-radius: 50%;
+            border: 1px solid $thirdfontcolor;
+            background-color: $thirdfontcolor;
+        }
+    }
+
+
+}
+
+.subhead {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 64px;
+    font-weight: 500;
+
+    .shoplatest {
+        width: 252px;
+        line-height: 43px;
+        font-size: 33px;
+        color: $firstfontcolor;
+    }
+
+    nav {
+        .nav-link {
+            width: 74px;
+            font-size: 20px;
+            line-height: 26px;
+            color: $secondfontcolor;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.catalog-section {
+    nav{
+        margin-top: 24px;
+        .catalog-element {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $firstfontcolor;
+        text-decoration: none;
+    }
+     }
+    .catalog-price {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 500;
+        color: $secondfontcolor;
+        margin-top: 16px;
+    }
+
+
+
+
+
+    .image-wrapper {
+        position: relative;
+        display: flex;
+    }
+
+    .add-to-cart-button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 4px 4px 0px 0px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        height: 65px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        opacity: 0;
+    }
+
+    .image-wrapper:hover button {
+        opacity: 1;
+    }
+
+    .first-boxes-part {
+        display: flex;
+        flex-direction: row;
+        gap: 54px;
+        margin-top: 39px;
+
+        .lira-earings {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 380px;
+            background-image: url('./assests/lira  earings.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+
+        }
+
+        .hal-earings {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 380px;
+            background-image: url('./assests/hal earings.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+
+        }
+
+        .kaede-hear-pin {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 380px;
+            background-image: url('./assests/kaede hear pin.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+
+        }
+
+    }
+
+    .second-boxes-part {
+        display: flex;
+        flex-direction: row;
+        gap: 54px;
+        margin-top: 178px;
+
+        .hair-pin-set {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 380px;
+            background-image: url('./assests/hairset-back.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+        }
+
+        .plaine-necklace {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 380px;
+            background-image: url('./assests/plaine necklace.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+        }
+
+        .yuki-set {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 380px;
+            background-image: url('./assests/yuki hair set.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+
+            .image-wrapper {
+                position: relative;
+                display: flex;
+            }
+
+            .add-to-cart-button {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 4px 4px 0px 0px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 21px;
+                height: 65px;
+                border: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                opacity: 0;
+            }
+
+            .image-wrapper:hover button {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.first-footer-line {
+    width: 1248px;
+    border: 1px solid #D8D8D8;
+    margin-top: 253px;
+}
+
+
+.footer-section {
+    margin-top: 345px;
+
+    .first-footer-part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 53px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #707070;
+
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            gap: 41px;
+
+            .nav-link {
+                color: #707070;
+                text-decoration: none;
+            }
+        }
+
+        .emailpart {
+            display: flex;
+            flex-direction: row;
+            gap: 128px;
+
+            button {
+                width: 25px;
+                border: none;
+                background-color: transparent
+            }
+        }
+    }
+
+    .lineitem {
+        width: 396px;
+        border: 0.1px solid $firstfontcolor;
+        margin-top: 7px;
+        display: flex;
+        position: relative;
+        left: 68.27%;
+        right: 0%;
+
+    }
+
+    .second-footer-part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 47px;
+
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+
+            button {
+                width: 19px;
+                border: none;
+                background-color: transparent
+            }
+        }
+
+        .text {
+            display: flex;
+            flex-direction: row;
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: 400;
+            gap: 5px;
+
+            nav {
+                .nav-link {
+                    color: #707070;
+                    text-decoration: none;
+                }
+            }
+
+            .textbold {
+                font-weight: 500;
+                color: #000000;
+            }
+
+        }
+    }
+
+}
