@@ -1,0 +1,613 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $common-font;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    max-width: 1248px;
+    margin-left: auto;
+    margin-right: auto;
+
+    header {
+        padding-top: 66px;
+        margin-bottom: 50px;
+
+        .headercontainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .linkline {
+                display: flex;
+                flex-direction: row;
+
+                nav {
+                    display: flex;
+                    gap: 64px;
+
+                    .nav-link {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 27px;
+                        color: $firstfontcolor;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .line {
+                border: 1px solid $fourthfontcolor;
+                transform: rotate(180deg);
+                margin-left: 48px;
+                margin-right: 48px;
+            }
+
+
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 39px;
+
+                button {
+                    width: 20px;
+                    border: none;
+                    background-color: transparent;
+                }
+
+
+            }
+        }
+
+        .header-ended-line {
+            width: 1248px;
+            border: 1px solid $line-color;
+            margin-top: 17px;
+        }
+
+    }
+
+    .hero-container {
+        margin-top: 128px;
+
+        .hero-first-subhead {
+            display: flex;
+            flex-direction: row;
+
+            .images-part {
+                display: flex;
+                flex-direction: row;
+
+
+                .left-part {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    height: 600px;
+                    width: 120px;
+                    border-radius: 8px;
+                    margin-right: 39px;
+                }
+
+                .right-part {
+                    display: flex;
+                    width: 540px;
+                    border-radius: 8px;
+                }
+            }
+
+            .text-part {
+                display: flex;
+                flex-direction: column;
+                width: 485px;
+                margin-left: 64px;
+
+                .catalog-element {
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: $firstfontcolor;
+                }
+
+                .catalog-price {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $secondfontcolor;
+                    margin-top: 23px;
+                }
+
+                .review {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 67.39px;
+                    gap: 24px;
+                    color: $fourthfontcolor;
+
+
+                    .stars {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                    }
+                }
+
+                .info {
+                    width: 484px;
+                    margin-top: 22.36px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $fourthfontcolor;
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 23px;
+                    margin-top: 48px;
+
+                    .cartbutton {
+                        width: 358px;
+                        height: 53px;
+                        border: 1px solid $firstfontcolor;
+                        border-radius: 4px;
+                        background-color: $thirdfontcolor;
+                        color: $firstfontcolor;
+                        font-weight: 700;
+                        font-size: 16px;
+
+                    }
+
+                    .button-box {
+                        width: 102px;
+                        height: 53px;
+                        background: #EFEFEF;
+                        border-radius: 4px;
+                        justify-content: space-between;
+                        
+                        .toggle-btn{
+                            cursor: pointer;
+                            background-color: transparent;
+                            border: none;
+                            margin-top: 16px;
+                            margin-left: 18px; 
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $fourthfontcolor;
+                        }
+                    }
+                }
+
+
+                .icons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 24.75px;
+                    margin-top: 81.95px;
+
+                    button {
+                        border: none;
+                        background-color: transparent;
+                    }
+                }
+
+
+
+
+                .first-end-part {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                    margin-top: 64px;
+                    font-weight: 400;
+                    font-size: 16px;
+
+                    .name {
+                        color: $firstfontcolor;
+                    }
+
+                    .subname {
+                        color: $fourthfontcolor;
+                    }
+                }
+
+                .second-end-part {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-top: 6px;
+
+                    .name {
+                        color: $firstfontcolor;
+                    }
+
+                    .subname {
+                        color: $fourthfontcolor;
+                    }
+                }
+            }
+        }
+
+        .hero-second-subhead {
+            margin-top: 99px;
+
+            nav {
+                display: flex;
+                flex-direction: row;
+                gap: 96px;
+                font-weight: 400;
+                font-size: 20px;
+
+                .nav-link {
+                    text-decoration: none;
+                    color: $fourthfontcolor;
+                }
+
+                .link {
+                    text-decoration: none;
+                    color: $firstfontcolor;
+                }
+            }
+
+            .text-boxes {
+                display: flex;
+                flex-direction: row;
+                margin-top: 76px;
+                gap: 88px;
+
+                .name {
+                    font-size: 20px;
+                    color: $firstfontcolor;
+                }
+
+                .date {
+                    font-size: 14px;
+                    color: $fourthfontcolor;
+                }
+
+                .subhead {
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: $firstfontcolor;
+                }
+
+                .left-text-box {
+                    .personal-info {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+                        font-weight: 400;
+                        align-items: center;
+                        margin-top: 76px;
+                    }
+
+                    .stars {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        margin-top: 16.39px;
+                    }
+
+                    .text {
+                        margin-top: 24.36px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $fourthfontcolor;
+                        width: 580px;
+                    }
+
+                    .line {
+                        width: 580px;
+                        border: 1px solid $line-color;
+                        margin-top: 39px;
+                        margin-bottom: 24px;
+                    }
+
+                    .personal-info-2 {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+                        font-weight: 400;
+                        align-items: center;
+                        margin-top: 24px;
+                    }
+                }
+
+                .right-text-box {
+                    font-weight: 400;
+                    color: $fourthfontcolor;
+
+                    .required {
+                        width: 581px;
+                        font-size: 13px;
+                        margin-top: 11px;
+                    }
+
+                    .your-review {
+                        margin-top: 46px;
+                        font-size: 13px;
+                    }
+
+                    .input-group {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 61px;
+                        gap: 46px;
+                        font-weight: 400;
+                        font-size: 14px;
+
+                        .input-field {
+                            width: 100%;
+                            border-left: 0;
+                            border-right: 0;
+                            border-top: 0;
+                            border-bottom: 1px solid $line-color;
+                            outline: none;
+                            padding: 13px 0;
+                        }
+                    }
+
+                    .input-group-2 {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 26px;
+
+                        .checkbox {
+                            width: 18px;
+                            height: 18px;
+                            border: 1px solid $firstfontcolor;
+                            margin-right: 8px;
+                        }
+
+                        span {
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: $fourthfontcolor;
+                            width: 503px;
+                        }
+                    }
+
+
+                    .stars {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        margin-top: 13.39px;
+                    }
+
+                    button {
+                        margin-top: 48.36px;
+                        width: 123px;
+                        height: 53px;
+                        background-color: $firstfontcolor;
+                        border: 1px solid $thirdfontcolor;
+                        border-radius: 10%;
+                        color: $thirdfontcolor;
+
+                    }
+
+                }
+            }
+
+        }
+
+        .hero-third-subhead {
+            display: flex;
+            flex-direction: column;
+            gap: 47px;
+            font-weight: 400;
+
+            .subhead {
+                margin-top: 112px;
+                font-size: 26px;
+                color: $firstfontcolor;
+            }
+
+            .first-boxes-part {
+                display: flex;
+                flex-direction: row;
+                gap: 54px;
+
+
+                nav {
+                    margin-top: 24px;
+
+                    .catalog-element {
+                        font-weight: 400;
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: $firstfontcolor;
+                        padding-top: 24px;
+                    }
+                }
+
+                .catalog-price {
+                    font-size: 20px;
+                    line-height: 26px;
+                    font-weight: 500;
+                    color: $secondfontcolor;
+                    margin-top: 16px;
+                }
+
+                .image-wrapper {
+                    position: relative;
+                    display: flex;
+                }
+
+                .add-to-cart-button {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background: rgba(255, 255, 255, 0.5);
+                    border-radius: 4px 4px 0px 0px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 21px;
+                    height: 65px;
+                    border: none;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    opacity: 0;
+                }
+
+                .image-wrapper:hover button {
+                    opacity: 1;
+                }
+
+                .hal-earings {
+                    display: flex;
+                    flex-direction: column;
+                    width: 380px;
+                    height: 380px;
+                    background-image: url('./assests/hal earings.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 8px;
+
+                }
+
+                .plaine-necklace {
+                    display: flex;
+                    flex-direction: column;
+                    width: 380px;
+                    height: 380px;
+                    background-image: url('./assests/plaine necklace.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 8px;
+                }
+
+                .kaede-hear-pin {
+                    display: flex;
+                    flex-direction: column;
+                    width: 380px;
+                    height: 380px;
+                    background-image: url('./assests/kaede hear pin.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 8px;
+
+                }
+
+            }
+        }
+
+    }
+
+    .footer-section {
+        margin-top: 345px;
+
+        .first-footer-line {
+            width: 1248px;
+            border: 1px solid $line-color;
+            margin-top: 253px;
+        }
+
+        .first-footer-part {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 53px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            color: $fourthfontcolor;
+
+
+            nav {
+                display: flex;
+                flex-direction: row;
+                gap: 41px;
+
+                .nav-link {
+                    color: $fourthfontcolor;
+                    text-decoration: none;
+                }
+            }
+
+            .emailpart {
+                display: flex;
+                flex-direction: row;
+                gap: 128px;
+
+                button {
+                    width: 25px;
+                    border: none;
+                    background-color: transparent
+                }
+            }
+        }
+
+        .lineitem {
+            width: 396px;
+            border: 0.1px solid $firstfontcolor;
+            margin-top: 7px;
+            display: flex;
+            position: relative;
+            left: 68.27%;
+            right: 0%;
+
+        }
+
+        .second-footer-part {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 47px;
+
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 30px;
+
+                button {
+                    width: 19px;
+                    border: none;
+                    background-color: transparent
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: row;
+                font-size: 16px;
+                line-height: 27px;
+                font-weight: 400;
+                gap: 5px;
+
+                nav {
+                    .nav-link {
+                        color: $fourthfontcolor;
+                        text-decoration: none;
+                    }
+                }
+
+                .textbold {
+                    font-weight: 500;
+                    color: $firstfontcolor;
+                }
+
+            }
+        }
+
+    }
+}

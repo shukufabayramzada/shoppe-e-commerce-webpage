@@ -1,1 +1,365 @@
-*{box-sizing:border-box;margin:0;padding:0;font-family:"DM Sans",sans-serif;font-style:normal}html{width:100%}body{width:100%}.container{max-width:1248px;margin-left:auto;margin-right:auto}.container header{padding-top:66px;margin-bottom:50px}.container header .headercontainer{display:flex;flex-direction:row;justify-content:space-between}.container header .headercontainer .linkline{display:flex;flex-direction:row}.container header .headercontainer .linkline nav{display:flex;gap:64px}.container header .headercontainer .linkline nav .nav-link{font-weight:400;font-size:16px;line-height:27px;color:#000;text-decoration:none}.container header .headercontainer .line{border:1px solid #707070;transform:rotate(180deg);margin-left:48px;margin-right:48px}.container header .headercontainer .icons{display:flex;flex-direction:row;justify-content:space-between;gap:39px}.container header .headercontainer .icons button{width:20px;border:none;background-color:rgba(0,0,0,0)}.container .hero-container{width:100%;height:646px;background:url("./assests/Img 01.png");background-size:cover;background-repeat:no-repeat;border-radius:16px}.container .hero-container .hero-section{display:flex;align-items:flex-start;flex-direction:column;justify-content:center;padding-top:226px;padding-left:44px;color:#fff}.container .hero-container .hero-section .about-section{padding-bottom:16px;width:352px;line-height:43px;font-weight:500;font-size:33px}.container .hero-container .hero-section .price{width:395px;line-height:35px;font-weight:400;font-size:26px;padding-top:16px}.container .hero-container .hero-section button{width:193px;height:53px;border:2px solid #fff;border-radius:6px;margin-top:48px;font-weight:700;font-size:20px;background:rgba(0,0,0,0);color:#fff}.container .hero-container .sliders{display:flex;flex-direction:row;padding-left:570px;align-items:center;gap:13.71px;padding-top:170px}.container .hero-container button.ellipse-1{width:16px;height:16px;border:1px solid #fff;border-radius:50%;background-color:rgba(0,0,0,0)}.container .hero-container button.ellipse-2{width:9.14px;height:9.14px;border-radius:50%;border:1px solid #fff;background-color:#fff}.subhead{display:flex;flex-direction:row;width:100%;justify-content:space-between;padding-top:64px;font-weight:500}.subhead .shoplatest{width:252px;line-height:43px;font-size:33px;color:#000}.subhead nav .nav-link{width:74px;font-size:20px;line-height:26px;color:#a18a68;text-transform:capitalize;text-decoration:none}.catalog-section nav{margin-top:24px}.catalog-section nav .catalog-element{font-size:20px;font-weight:400;line-height:26px;color:#000;text-decoration:none}.catalog-section .catalog-price{font-size:20px;line-height:26px;font-weight:500;color:#a18a68;margin-top:16px}.catalog-section .image-wrapper{position:relative;display:flex}.catalog-section .add-to-cart-button{position:absolute;bottom:0;left:0;width:100%;background:rgba(255,255,255,.5);border-radius:4px 4px 0px 0px;font-weight:700;font-size:16px;line-height:21px;height:65px;border:none;cursor:pointer;text-transform:uppercase;opacity:0}.catalog-section .image-wrapper:hover button{opacity:1}.catalog-section .first-boxes-part{display:flex;flex-direction:row;gap:54px;margin-top:39px}.catalog-section .first-boxes-part .lira-earings{display:flex;flex-direction:column;width:380px;height:380px;background-image:url("./assests/lira  earings.png");background-size:cover;background-repeat:no-repeat;border-radius:8px}.catalog-section .first-boxes-part .hal-earings{display:flex;flex-direction:column;width:380px;height:380px;background-image:url("./assests/hal earings.png");background-size:cover;background-repeat:no-repeat;border-radius:8px}.catalog-section .first-boxes-part .kaede-hear-pin{display:flex;flex-direction:column;width:380px;height:380px;background-image:url("./assests/kaede hear pin.png");background-size:cover;background-repeat:no-repeat;border-radius:8px}.catalog-section .second-boxes-part{display:flex;flex-direction:row;gap:54px;margin-top:178px}.catalog-section .second-boxes-part .hair-pin-set{display:flex;flex-direction:column;width:380px;height:380px;background-image:url("./assests/hairset-back.png");background-size:cover;background-repeat:no-repeat;border-radius:8px}.catalog-section .second-boxes-part .plaine-necklace{display:flex;flex-direction:column;width:380px;height:380px;background-image:url("./assests/plaine necklace.png");background-size:cover;background-repeat:no-repeat;border-radius:8px}.catalog-section .second-boxes-part .yuki-set{display:flex;flex-direction:column;width:380px;height:380px;background-image:url("./assests/yuki hair set.png");background-size:cover;background-repeat:no-repeat;border-radius:8px}.catalog-section .second-boxes-part .yuki-set .image-wrapper{position:relative;display:flex}.catalog-section .second-boxes-part .yuki-set .add-to-cart-button{position:absolute;bottom:0;left:0;width:100%;background:rgba(255,255,255,.5);border-radius:4px 4px 0px 0px;font-weight:700;font-size:16px;line-height:21px;height:65px;border:none;cursor:pointer;text-transform:uppercase;opacity:0}.catalog-section .second-boxes-part .yuki-set .image-wrapper:hover button{opacity:1}.first-footer-line{width:1248px;border:1px solid #d8d8d8;margin-top:253px}.footer-section{margin-top:345px}.footer-section .first-footer-part{display:flex;flex-direction:row;justify-content:space-between;margin-top:53px;font-weight:400;font-size:16px;line-height:27px;color:#707070}.footer-section .first-footer-part nav{display:flex;flex-direction:row;gap:41px}.footer-section .first-footer-part nav .nav-link{color:#707070;text-decoration:none}.footer-section .first-footer-part .emailpart{display:flex;flex-direction:row;gap:128px}.footer-section .first-footer-part .emailpart button{width:25px;border:none;background-color:rgba(0,0,0,0)}.footer-section .lineitem{width:396px;border:.1px solid #000;margin-top:7px;display:flex;position:relative;left:68.27%;right:0%}.footer-section .second-footer-part{display:flex;flex-direction:row;justify-content:space-between;margin-top:47px}.footer-section .second-footer-part .icons{display:flex;flex-direction:row;justify-content:space-between;gap:30px}.footer-section .second-footer-part .icons button{width:19px;border:none;background-color:rgba(0,0,0,0)}.footer-section .second-footer-part .text{display:flex;flex-direction:row;font-size:16px;line-height:27px;font-weight:400;gap:5px}.footer-section .second-footer-part .text nav .nav-link{color:#707070;text-decoration:none}.footer-section .second-footer-part .text .textbold{font-weight:500;color:#000}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  max-width: 1248px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container header {
+  padding-top: 66px;
+  margin-bottom: 50px;
+}
+.container header .headercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container header .headercontainer .linkline {
+  display: flex;
+  flex-direction: row;
+}
+.container header .headercontainer .linkline nav {
+  display: flex;
+  gap: 64px;
+}
+.container header .headercontainer .linkline nav .nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+  text-decoration: none;
+}
+.container header .headercontainer .line {
+  border: 1px solid #707070;
+  transform: rotate(180deg);
+  margin-left: 48px;
+  margin-right: 48px;
+}
+.container header .headercontainer .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 39px;
+}
+.container header .headercontainer .icons button {
+  width: 20px;
+  border: none;
+  background-color: transparent;
+}
+.container .hero-container {
+  width: 100%;
+  height: 646px;
+  background: url("./assests/Img 01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.container .hero-container .hero-section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 226px;
+  padding-left: 44px;
+  color: #ffffff;
+}
+.container .hero-container .hero-section .about-section {
+  padding-bottom: 16px;
+  width: 352px;
+  line-height: 43px;
+  font-weight: 500;
+  font-size: 33px;
+}
+.container .hero-container .hero-section .price {
+  width: 395px;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 26px;
+  padding-top: 16px;
+}
+.container .hero-container .hero-section button {
+  width: 193px;
+  height: 53px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  margin-top: 48px;
+  font-weight: 700;
+  font-size: 20px;
+  background: transparent;
+  color: #ffffff;
+}
+.container .hero-container .sliders {
+  display: flex;
+  flex-direction: row;
+  padding-left: 570px;
+  align-items: center;
+  gap: 13.71px;
+  padding-top: 170px;
+}
+.container .hero-container button.ellipse-1 {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.container .hero-container button.ellipse-2 {
+  width: 9.14px;
+  height: 9.14px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.subhead {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 64px;
+  font-weight: 500;
+}
+.subhead .shoplatest {
+  width: 252px;
+  line-height: 43px;
+  font-size: 33px;
+  color: #000000;
+}
+.subhead nav .nav-link {
+  width: 74px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #A18A68;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.catalog-section nav {
+  margin-top: 24px;
+}
+.catalog-section nav .catalog-element {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+.catalog-section .catalog-price {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #A18A68;
+  margin-top: 16px;
+}
+.catalog-section .image-wrapper {
+  position: relative;
+  display: flex;
+}
+.catalog-section .add-to-cart-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px 4px 0px 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  height: 65px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  opacity: 0;
+}
+.catalog-section .image-wrapper:hover button {
+  opacity: 1;
+}
+.catalog-section .first-boxes-part {
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+  margin-top: 39px;
+}
+.catalog-section .first-boxes-part .lira-earings {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  background-image: url("./assests/lira earings.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.catalog-section .first-boxes-part .hal-earings {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  background-image: url("./assests/hal earings.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.catalog-section .first-boxes-part .kaede-hear-pin {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  background-image: url("./assests/kaede hear pin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.catalog-section .second-boxes-part {
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+  margin-top: 178px;
+}
+.catalog-section .second-boxes-part .hair-pin-set {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  background-image: url("./assests/hairset-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.catalog-section .second-boxes-part .plaine-necklace {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  background-image: url("./assests/plaine necklace.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.catalog-section .second-boxes-part .yuki-set {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 380px;
+  background-image: url("./assests/yuki hair set.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+.catalog-section .second-boxes-part .yuki-set .image-wrapper {
+  position: relative;
+  display: flex;
+}
+.catalog-section .second-boxes-part .yuki-set .add-to-cart-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px 4px 0px 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  height: 65px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  opacity: 0;
+}
+.catalog-section .second-boxes-part .yuki-set .image-wrapper:hover button {
+  opacity: 1;
+}
+
+.footer-section {
+  margin-top: 345px;
+}
+.footer-section .first-footer-line {
+  width: 1248px;
+  border: 1px solid #D8D8D8;
+  margin-top: 253px;
+}
+.footer-section .first-footer-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 53px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #707070;
+}
+.footer-section .first-footer-part nav {
+  display: flex;
+  flex-direction: row;
+  gap: 41px;
+}
+.footer-section .first-footer-part nav .nav-link {
+  color: #707070;
+  text-decoration: none;
+}
+.footer-section .first-footer-part .emailpart {
+  display: flex;
+  flex-direction: row;
+  gap: 128px;
+}
+.footer-section .first-footer-part .emailpart button {
+  width: 25px;
+  border: none;
+  background-color: transparent;
+}
+.footer-section .lineitem {
+  width: 396px;
+  border: 0.1px solid #000000;
+  margin-top: 7px;
+  display: flex;
+  position: relative;
+  left: 68.27%;
+  right: 0%;
+}
+.footer-section .second-footer-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 47px;
+}
+.footer-section .second-footer-part .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-section .second-footer-part .icons button {
+  width: 19px;
+  border: none;
+  background-color: transparent;
+}
+.footer-section .second-footer-part .text {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  gap: 5px;
+}
+.footer-section .second-footer-part .text nav .nav-link {
+  color: #707070;
+  text-decoration: none;
+}
+.footer-section .second-footer-part .text .textbold {
+  font-weight: 500;
+  color: #000000;
+}/*# sourceMappingURL=landing.css.map */

@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  max-width: 1248px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container header {
+  padding-top: 66px;
+  margin-bottom: 50px;
+}
+.container header .headercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container header .headercontainer .linkline {
+  display: flex;
+  flex-direction: row;
+}
+.container header .headercontainer .linkline nav {
+  display: flex;
+  gap: 64px;
+}
+.container header .headercontainer .linkline nav .nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+  text-decoration: none;
+}
+.container header .headercontainer .line {
+  border: 1px solid #707070;
+  transform: rotate(180deg);
+  margin-left: 48px;
+  margin-right: 48px;
+}
+.container header .headercontainer .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 39px;
+}
+.container header .headercontainer .icons button {
+  width: 20px;
+  border: none;
+  background-color: transparent;
+}
+.container header .header-ended-line {
+  width: 1248px;
+  border: 1px solid #D8D8D8;
+  margin-top: 17px;
+}
+.container .hero-container .subhead {
+  text-align: center;
+  font-weight: 500;
+  font-size: 33px;
+  color: #000000;
+  margin-top: 96px;
+}
+.container .hero-container nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+  gap: 49px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.container .hero-container nav .nav-link-1 {
+  text-decoration: none;
+  color: #000000;
+}
+.container .hero-container nav .nav-link {
+  text-decoration: none;
+  color: #707070;
+}
+.container .hero-container .header-ended-line {
+  width: 1248px;
+  border: 1px solid #D8D8D8;
+  margin-top: 34px;
+}
+.container .text-part {
+  display: flex;
+  flex-direction: column;
+  margin-top: 73px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.container .text-part .rows {
+  display: flex;
+  flex-direction: row;
+}
+.container .text-part .rows .text {
+  color: #000000;
+}
+.container .text-part .rows nav .nav-link {
+  text-decoration: none;
+  color: #A18A68;
+  margin-left: 5px;
+}
+.container .footer-section {
+  margin-top: 208px;
+}
+.container .footer-section .first-footer-line {
+  width: 1248px;
+  border: 1px solid #D8D8D8;
+  margin-top: 253px;
+}
+.container .footer-section .first-footer-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 53px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #707070;
+}
+.container .footer-section .first-footer-part nav {
+  display: flex;
+  flex-direction: row;
+  gap: 41px;
+}
+.container .footer-section .first-footer-part nav .nav-link {
+  color: #707070;
+  text-decoration: none;
+}
+.container .footer-section .first-footer-part .emailpart {
+  display: flex;
+  flex-direction: row;
+  gap: 128px;
+}
+.container .footer-section .first-footer-part .emailpart button {
+  width: 25px;
+  border: none;
+  background-color: transparent;
+}
+.container .footer-section .lineitem {
+  width: 396px;
+  border: 0.1px solid #000000;
+  margin-top: 7px;
+  display: flex;
+  position: relative;
+  left: 68.27%;
+  right: 0%;
+}
+.container .footer-section .second-footer-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 47px;
+}
+.container .footer-section .second-footer-part .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+.container .footer-section .second-footer-part .icons button {
+  width: 19px;
+  border: none;
+  background-color: transparent;
+}
+.container .footer-section .second-footer-part .text {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  gap: 5px;
+}
+.container .footer-section .second-footer-part .text nav .nav-link {
+  color: #707070;
+  text-decoration: none;
+}
+.container .footer-section .second-footer-part .text .textbold {
+  font-weight: 500;
+  color: #000000;
+}/*# sourceMappingURL=account.css.map */
