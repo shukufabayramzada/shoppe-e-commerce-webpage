@@ -29,127 +29,144 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
-            .linkline {
-                display: flex;
-                flex-direction: row;
-
-                nav {
-                    display: flex;
-                    gap: 64px;
-
-                    .nav-link {
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 27px;
-                        color: $firstfontcolor;
-                        text-decoration: none;
-                    }
-                }
-            }
-
-            .line {
-                border: 1px solid $fourthfontcolor;
-                transform: rotate(180deg);
-                margin-left: 48px;
-                margin-right: 48px;
-            }
-
-
-
-            .icons {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                gap: 39px;
-
-                button {
-                    width: 20px;
-                    border: none;
-                    background-color: transparent;
-                }
-
-
-            }
-        }
-    }
-
-    .hero-container {
-        width: 100%;
-        height: 646px;
-        background: url('./assests/Img 01.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 16px;
-
-        .hero-section {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: center;
-            padding-top: 226px;
-            padding-left: 44px;
-            color: $thirdfontcolor;
-
-            .about-section {
-                padding-bottom: 16px;
-                width: 352px;
-                line-height: 43px;
-                font-weight: 500;
-                font-size: 33px;
-            }
-
-            .price {
-                width: 395px;
-                line-height: 35px;
-                font-weight: 400;
-                font-size: 26px;
-                padding-top: 16px;
-            }
-
-            button {
-                width: 193px;
-                height: 53px;
-                border: 2px solid $thirdfontcolor;
-                border-radius: 6px;
-                margin-top: 48px;
-                font-weight: 700;
-                font-size: 20px;
-                background: transparent;
-                color: $thirdfontcolor;
-            }
-
         }
 
-        .sliders {
+        .linkline {
             display: flex;
             flex-direction: row;
-            padding-left: 570px;
-            align-items: center;
-            gap: 13.71px;
-            padding-top: 170px;
+
+            nav {
+                display: flex;
+                flex-direction: row;
+                gap: 64px;
+
+                .nav-link {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: $firstfontcolor;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .line {
+            border: 1px solid $fourthfontcolor;
+            transform: rotate(180deg);
+            margin-left: 48px;
+            margin-right: 48px;
+        }
+         .logo{
+            width: 158px;
+         }
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 39px;
+
+            button {
+                width: 20px;
+                border: none;
+                background-color: transparent;
+            }
+        }
+
+        .buttons {
+            display: none;
+
+            .mobile-only {
+                display: none;
+            }
+        }
+
+        .input-group {
+            display: none;
+
+            .mobile-only {
+                display: none;
+            }
 
         }
 
-        button.ellipse-1 {
-            width: 16px;
-            height: 16px;
-            border: 1px solid $thirdfontcolor;
-            border-radius: 50%;
-            background-color: transparent;
 
+
+    }
+}
+
+.hero-container {
+    width: 100%;
+    height: 646px;
+    background: url('./assests/Img 01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+
+    .hero-section {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 226px;
+        padding-left: 44px;
+        color: $thirdfontcolor;
+
+        .about-section {
+            padding-bottom: 16px;
+            line-height: 43px;
+            font-weight: 500;
+            font-size: 33px;
         }
 
-        button.ellipse-2 {
-            width: 9.14px;
-            height: 9.14px;
-            border-radius: 50%;
-            border: 1px solid $thirdfontcolor;
-            background-color: $thirdfontcolor;
+        .price {
+
+            line-height: 35px;
+            font-weight: 400;
+            font-size: 26px;
+            padding-top: 16px;
         }
+
+        button {
+            width: 193px;
+            height: 53px;
+            border: 2px solid $thirdfontcolor;
+            border-radius: 6px;
+            margin-top: 48px;
+            font-weight: 700;
+            font-size: 20px;
+            background: transparent;
+            color: $thirdfontcolor;
+        }
+
     }
 
+    .sliders {
+        display: flex;
+        flex-direction: row;
+        padding-left: 570px;
+        align-items: center;
+        gap: 13.71px;
+        padding-top: 170px;
 
+    }
+
+    button.ellipse-1 {
+        width: 16px;
+        height: 16px;
+        border: 1px solid $thirdfontcolor;
+        border-radius: 50%;
+        background-color: transparent;
+
+    }
+
+    button.ellipse-2 {
+        width: 9.14px;
+        height: 9.14px;
+        border-radius: 50%;
+        border: 1px solid $thirdfontcolor;
+        background-color: $thirdfontcolor;
+    }
 }
 
 .subhead {
@@ -157,11 +174,11 @@ body {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    padding-top: 64px;
+    margin-top: 64px;
     font-weight: 500;
 
     .shoplatest {
-        width: 252px;
+
         line-height: 43px;
         font-size: 33px;
         color: $firstfontcolor;
@@ -169,7 +186,7 @@ body {
 
     nav {
         .nav-link {
-            width: 74px;
+
             font-size: 20px;
             line-height: 26px;
             color: $secondfontcolor;
@@ -181,6 +198,15 @@ body {
 }
 
 .catalog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 79px;
+    margin-top: 39px;
+    width: 100%;
+     img{
+        height:380px;
+        object-fit: cover;
+     }
     nav {
         margin-top: 24px;
 
@@ -231,16 +257,11 @@ body {
         display: flex;
         flex-direction: row;
         gap: 54px;
-        margin-top: 39px;
+        width: 100%;
 
         .lira-earings {
             display: flex;
             flex-direction: column;
-            width: 380px;
-            height: 380px;
-            background-image: url('./assests/lira earings.png');
-            background-size: cover;
-            background-repeat: no-repeat;
             border-radius: 8px;
 
         }
@@ -248,11 +269,6 @@ body {
         .hal-earings {
             display: flex;
             flex-direction: column;
-            width: 380px;
-            height: 380px;
-            background-image: url('./assests/hal earings.png');
-            background-size: cover;
-            background-repeat: no-repeat;
             border-radius: 8px;
 
         }
@@ -260,11 +276,6 @@ body {
         .kaede-hear-pin {
             display: flex;
             flex-direction: column;
-            width: 380px;
-            height: 380px;
-            background-image: url('./assests/kaede hear pin.png');
-            background-size: cover;
-            background-repeat: no-repeat;
             border-radius: 8px;
 
         }
@@ -275,77 +286,38 @@ body {
         display: flex;
         flex-direction: row;
         gap: 54px;
-        margin-top: 178px;
+        width: 100%;
 
         .hair-pin-set {
             display: flex;
             flex-direction: column;
-            width: 380px;
-            height: 380px;
-            background-image: url('./assests/hairset-back.png');
-            background-size: cover;
-            background-repeat: no-repeat;
             border-radius: 8px;
         }
 
         .plaine-necklace {
             display: flex;
             flex-direction: column;
-            width: 380px;
-            height: 380px;
-            background-image: url('./assests/plaine necklace.png');
-            background-size: cover;
-            background-repeat: no-repeat;
             border-radius: 8px;
         }
 
         .yuki-set {
             display: flex;
             flex-direction: column;
-            width: 380px;
-            height: 380px;
-            background-image: url('./assests/yuki hair set.png');
-            background-size: cover;
-            background-repeat: no-repeat;
             border-radius: 8px;
 
-            .image-wrapper {
-                position: relative;
-                display: flex;
-            }
+        }
 
-            .add-to-cart-button {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background: rgba(255, 255, 255, 0.5);
-                border-radius: 4px 4px 0px 0px;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 21px;
-                height: 65px;
-                border: none;
-                cursor: pointer;
-                text-transform: uppercase;
-                opacity: 0;
-            }
-
-            .image-wrapper:hover button {
-                opacity: 1;
-            }
+        .kaede-hear-pin {
+            display: none;
         }
     }
 }
-
-
-
 
 .footer-section {
     margin-top: 345px;
 
     .first-footer-line {
-        width: 1248px;
+        width: 100%;
         border: 1px solid $line-color;
         margin-top: 253px;
     }
@@ -395,7 +367,10 @@ body {
         right: 0%;
 
     }
-
+    .input-group-2 {
+        display: none;
+       
+    }
     .second-footer-part {
         display: flex;
         flex-direction: row;
@@ -439,4 +414,231 @@ body {
         }
     }
 
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 288px;
+    }
+
+    .container header {
+        margin-top: 15px;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    .container header .headercontainer img .logo {
+        width: 99px;
+        height: 36px;
+    }
+
+    .container header .headercontainer .linkline {
+        display: none;
+    }
+
+    .hero-container {
+        background: url('./assests/Img\ 01\ \(2\).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 354px;
+        margin-top: 16px;
+    }
+
+    .hero-container .hero-section {
+        padding-left: 8px;
+        padding-top: 235px;
+    }
+
+
+    .hero-container .hero-section .about-section {
+        font-size: 20px;
+        line-height: 26px;
+        padding-bottom: 3px;
+        text-transform: capitalize;
+    }
+
+    .hero-container .hero-section .price {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0;
+    }
+
+    .hero-container .hero-section button {
+        width: 92px;
+        height: 32px;
+        border: 1px solid $thirdfontcolor;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .hero-container .sliders {
+        gap: 6px;
+        padding-top: 11px;
+        padding-left: 121px;
+    }
+
+    .hero-container button.ellipse-1 {
+        width: 7px;
+        height: 7px;
+        border: 0.75px solid $thirdfontcolor;
+
+    }
+
+    .hero-container button.ellipse-2 {
+        width: 4px;
+        height: 4px;
+
+    }
+
+    .subhead {
+        margin-top: 21px;
+        font-weight: 400;
+    }
+
+    .subhead .shoplatest {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .subhead nav .nav-link {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .catalog-section {
+        margin-top: 13px;
+        gap: 24px;
+        width: 100%;
+
+    }
+
+    .catalog-section .first-boxes-part {
+        gap: 16px;
+    }
+
+    .catalog-section .second-boxes-part {
+        gap: 16px;
+    }
+
+    .catalog-section img {
+        height: 136px;
+    }
+
+    .catalog-section .first-boxes-part .kaede-hear-pin {
+        display: none;
+    }
+
+    .catalog-section .second-boxes-part .plaine-necklace {
+        display: none;
+    }
+
+    .catalog-section nav {
+        margin-top: 6px;
+    }
+
+    .catalog-section nav .catalog-element {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .catalog-section .catalog-price {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 4px;
+    }
+
+    .catalog-section .add-to-cart-button {
+        width: 100%;
+    }
+
+    .container {
+        header {
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                gap: 17px;
+
+                .mobile-only {
+                    display: block;
+                    background-color: transparent;
+                    border: none;
+
+                }
+            }
+        }
+    }
+
+    .container header .input-group {
+        display: flex;
+        flex-direction: row;
+        margin-top: 9px;
+        width: 100%;
+        height: 32px;
+        gap: 8px;
+        background: #EFEFEF;
+        border-radius: 4px;
+        padding-left: 10px;
+
+
+    }
+
+    .container header .input-group .mobile-only {
+        display: block;
+        border: none;
+        outline: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: $fourthfontcolor;
+        background-color: transparent;
+    }
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 70px;
+    }
+    .footer-section .first-footer-line{
+        display: none;
+    }
+    .footer-section .first-footer-part{
+       flex-direction: column;
+       gap: 40px;
+       margin-top: 92px;
+       font-size: 12px;
+       line-height: 20px;
+    }
+    .footer-section .first-footer-part nav{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer-section .lineitem{
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .footer-section .first-footer-part .emailpart{
+      gap: 80px;
+
+    }
+    .footer-section .first-footer-part .emailpart button{
+        width: 15px;
+    }
+    .footer-section .input-group-2{
+       display: flex;
+       align-items: center;
+       gap: 4px;
+       font-size: 12px;
+       line-height: 20px;
+       margin-top: 16px;
+    }
+    .footer-section .second-footer-part .text {
+        display: none;
+    }
+    .footer-section .second-footer-part .icons {
+        width: 9px;
+    }
 }
