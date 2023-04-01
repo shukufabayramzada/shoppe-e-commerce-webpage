@@ -56,9 +56,10 @@ body {
             margin-left: 48px;
             margin-right: 48px;
         }
-         .logo{
+
+        .logo {
             width: 158px;
-         }
+        }
 
         .icons {
             display: flex;
@@ -203,10 +204,13 @@ body {
     gap: 79px;
     margin-top: 39px;
     width: 100%;
-     img{
-        height:380px;
+
+    img {
+        height: 380px;
         object-fit: cover;
-     }
+        width: 100%;
+    }
+
     nav {
         margin-top: 24px;
 
@@ -230,7 +234,13 @@ body {
     .image-wrapper {
         position: relative;
         display: flex;
+
+        .sale {
+            display: none;
+        }
     }
+
+
 
     .add-to-cart-button {
         position: absolute;
@@ -305,6 +315,20 @@ body {
             flex-direction: column;
             border-radius: 8px;
 
+            .price {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+
+                .price-visible {
+                    display: none;
+                }
+
+                .sale-price {
+                    display: none;
+                }
+            }
+
         }
 
         .kaede-hear-pin {
@@ -358,34 +382,41 @@ body {
     }
 
     .lineitem {
-        width: 396px;
+        width: 100%;
         border: 0.1px solid $firstfontcolor;
         margin-top: 7px;
         display: flex;
         position: relative;
-        left: 68.27%;
         right: 0%;
 
     }
+
     .input-group-2 {
         display: none;
-       
+
     }
+
     .second-footer-part {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 47px;
 
+        .ended-part {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .mobile-only {
+            display: none;
+        }
 
         .icons {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             gap: 30px;
 
             button {
-                width: 19px;
                 border: none;
                 background-color: transparent
             }
@@ -416,24 +447,42 @@ body {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     .container {
         max-width: 288px;
-    }
 
-    .container header {
-        margin-top: 15px;
-        padding-top: 0;
-        margin-bottom: 0;
-    }
+        header {
+            margin-top: 15px;
+            padding-top: 0;
+            margin-bottom: 0;
 
-    .container header .headercontainer img .logo {
-        width: 99px;
-        height: 36px;
-    }
+            .headercontainer {
 
-    .container header .headercontainer .linkline {
-        display: none;
+                .logo {
+                    width: 99px;
+                    height: 36px;
+                }
+
+                .linkline {
+                    display: none;
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 17px;
+
+                    .mobile-only {
+                        display: block;
+                        background-color: transparent;
+                        border: none;
+
+                    }
+                }
+            }
+
+
+        }
     }
 
     .hero-container {
@@ -443,202 +492,280 @@ body {
         width: 100%;
         height: 354px;
         margin-top: 16px;
-    }
 
-    .hero-container .hero-section {
-        padding-left: 8px;
-        padding-top: 235px;
-    }
+        .hero-section {
+            padding-left: 8px;
+            padding-top: 235px;
 
+            .about-section {
+                font-size: 20px;
+                line-height: 26px;
+                padding-bottom: 3px;
+                text-transform: capitalize;
+            }
 
-    .hero-container .hero-section .about-section {
-        font-size: 20px;
-        line-height: 26px;
-        padding-bottom: 3px;
-        text-transform: capitalize;
-    }
+            .price {
+                font-size: 14px;
+                line-height: 22px;
+                padding: 0;
+            }
 
-    .hero-container .hero-section .price {
-        font-size: 14px;
-        line-height: 22px;
-        padding: 0;
-    }
+            button {
+                width: 92px;
+                height: 32px;
+                border: 1px solid $thirdfontcolor;
+                border-radius: 4px;
+                font-weight: 400;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
 
-    .hero-container .hero-section button {
-        width: 92px;
-        height: 32px;
-        border: 1px solid $thirdfontcolor;
-        border-radius: 4px;
-        font-weight: 400;
-        font-size: 12px;
-        margin-top: 10px;
-    }
+        .sliders {
+            gap: 6px;
+            padding-top: 11px;
+            padding-left: 121px;
 
-    .hero-container .sliders {
-        gap: 6px;
-        padding-top: 11px;
-        padding-left: 121px;
-    }
+            .ellipse-1 {
+                width: 7px;
+                height: 7px;
+                border: 0.75px solid $thirdfontcolor;
+            }
 
-    .hero-container button.ellipse-1 {
-        width: 7px;
-        height: 7px;
-        border: 0.75px solid $thirdfontcolor;
+            .ellipse-2 {
+                width: 4px;
+                height: 4px;
+            }
+        }
 
-    }
+        .input-group {
+            display: flex;
+            flex-direction: row;
+            margin-top: 9px;
+            width: 100%;
+            height: 32px;
+            gap: 8px;
+            background: #EFEFEF;
+            border-radius: 4px;
+            padding-left: 10px;
 
-    .hero-container button.ellipse-2 {
-        width: 4px;
-        height: 4px;
+            .mobile-only {
+                display: block;
+                border: none;
+                outline: none;
+                font-weight: 400;
+                font-size: 14px;
+                color: $fourthfontcolor;
+                background-color: transparent;
+            }
+
+        }
+
 
     }
 
     .subhead {
         margin-top: 21px;
         font-weight: 400;
-    }
 
-    .subhead .shoplatest {
-        font-size: 16px;
-        line-height: 27px;
-    }
+        .shoplatest {
+            font-size: 16px;
+            line-height: 27px;
+        }
 
-    .subhead nav .nav-link {
-        font-size: 14px;
-        line-height: 22px;
+        nav {
+            .nav-link {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
     }
 
     .catalog-section {
         margin-top: 13px;
         gap: 24px;
-        width: 100%;
 
-    }
+        .add-to-cart-button {
+            width: 100%;
+            font-size: 12px;
+            height: 50px;
+            font-weight: 400;
+        }
 
-    .catalog-section .first-boxes-part {
-        gap: 16px;
-    }
+        nav {
+            margin-top: 6px;
 
-    .catalog-section .second-boxes-part {
-        gap: 16px;
-    }
+            .catalog-element {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        .catalog-price {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            margin-top: 4px;
+        }
 
-    .catalog-section img {
-        height: 136px;
-    }
+        img {
+            height: 136px;
+        }
 
-    .catalog-section .first-boxes-part .kaede-hear-pin {
-        display: none;
-    }
+        .image-wrapper {
+            position: relative;
 
-    .catalog-section .second-boxes-part .plaine-necklace {
-        display: none;
-    }
-
-    .catalog-section nav {
-        margin-top: 6px;
-    }
-
-    .catalog-section nav .catalog-element {
-        font-size: 14px;
-        line-height: 22px;
-    }
-
-    .catalog-section .catalog-price {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 20px;
-        margin-top: 4px;
-    }
-
-    .catalog-section .add-to-cart-button {
-        width: 100%;
-    }
-
-    .container {
-        header {
-            .buttons {
+            .sale {
                 display: flex;
-                flex-direction: row;
-                gap: 17px;
+                background-color: $secondfontcolor;
+                border-radius: 4px;
+                height: 22px;
+                width: 42px;
+                position: absolute;
+                top: 4px;
+                left: 4px;
 
-                .mobile-only {
-                    display: block;
-                    background-color: transparent;
-                    border: none;
+                .text {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: $thirdfontcolor;
+                    text-align: center;
+                    margin-left: 8px;
+                }
+            }
+        }
 
+        .first-boxes-part {
+            gap: 16px;
+
+            .kaede-hear-pin {
+                display: none;
+            }
+
+
+        }
+
+        .second-boxes-part {
+            gap: 16px;
+
+            .plaine-necklace {
+                display: none;
+            }
+
+            .yuki-set {
+                .price {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-top: 4px;
+
+                    .catalog-price {
+                        display: none;
+                    }
+
+                    .price-visible {
+                        display: flex;
+                        color: $secondfontcolor;
+                    }
+
+                    .sale-price {
+                        display: flex;
+                        color: red;
+                        position: relative;
+
+                        .line {
+                            display: flex;
+                            position: absolute;
+                            width: 44px;
+                            height: 0;
+                            top: 10px;
+                            border: 1px solid red;
+                        }
+
+                    }
                 }
             }
         }
     }
 
-    .container header .input-group {
-        display: flex;
-        flex-direction: row;
-        margin-top: 9px;
-        width: 100%;
-        height: 32px;
-        gap: 8px;
-        background: #EFEFEF;
-        border-radius: 4px;
-        padding-left: 10px;
-
-
-    }
-
-    .container header .input-group .mobile-only {
-        display: block;
-        border: none;
-        outline: none;
-        font-weight: 400;
-        font-size: 14px;
-        color: $fourthfontcolor;
-        background-color: transparent;
-    }
-    .footer-section{
+    .footer-section {
         display: flex;
         flex-direction: column;
         width: 100%;
         margin-top: 70px;
-    }
-    .footer-section .first-footer-line{
-        display: none;
-    }
-    .footer-section .first-footer-part{
-       flex-direction: column;
-       gap: 40px;
-       margin-top: 92px;
-       font-size: 12px;
-       line-height: 20px;
-    }
-    .footer-section .first-footer-part nav{
-        flex-direction: column;
-        gap: 8px;
-    }
-    .footer-section .lineitem{
-        width: 100%;
-        left: 0;
-        right: 0;
-    }
-    .footer-section .first-footer-part .emailpart{
-      gap: 80px;
+
+        .lineitem {
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+
+        .input-group-2 {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            line-height: 20px;
+            margin-top: 16px;
+        }
+
+        .first-footer-line {
+            display: none;
+        }
+
+        .first-footer-part {
+            flex-direction: column-reverse;
+            gap: 40px;
+            margin-top: 92px;
+            font-size: 12px;
+            line-height: 20px;
+
+            .emailpart {
+                gap: 80px;
+
+                button img {
+                    width: 15px;
+                }
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        .second-footer-part {
+            flex-direction: column-reverse;
+            font-size: 12px;
+            line-height: 20px;
+
+            .text {
+                font-size: 12px;
+                line-height: 20px;
+                margin-top: 36px;
+            }
+
+            .mobile-only {
+                display: flex;
+            }
+
+            .icons {
+                gap: 16.33px;
+
+                button img {
+                    width: 12px;
+                    height: 12px;
+                }
+
+            }
+
+            .ended-part {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 32px;
+            }
+        }
 
     }
-    .footer-section .first-footer-part .emailpart button{
-        width: 15px;
-    }
-    .footer-section .input-group-2{
-       display: flex;
-       align-items: center;
-       gap: 4px;
-       font-size: 12px;
-       line-height: 20px;
-       margin-top: 16px;
-    }
-    .footer-section .second-footer-part .text {
-        display: none;
-    }
-    .footer-section .second-footer-part .icons {
-        width: 9px;
-    }
+
 }

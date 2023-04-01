@@ -55,6 +55,9 @@ body {
                 margin-right: 48px;
             }
 
+            .logo {
+                width: 158px;
+            }
 
 
             .icons {
@@ -68,13 +71,19 @@ body {
                     border: none;
                     background-color: transparent;
                 }
+            }
 
+            .buttons {
+                display: none;
 
+                .mobile-only {
+                    display: none;
+                }
             }
         }
 
         .header-ended-line {
-            width: 1248px;
+            width: 100%;
             border: 1px solid $line-color;
             margin-top: 17px;
         }
@@ -92,21 +101,23 @@ body {
                 display: flex;
                 flex-direction: row;
 
-
                 .left-part {
                     display: flex;
                     flex-direction: column;
                     gap: 40px;
-                    height: 600px;
                     width: 120px;
                     border-radius: 8px;
                     margin-right: 39px;
                 }
 
                 .right-part {
-                    display: flex;
-                    width: 540px;
-                    border-radius: 8px;
+                    img {
+                        display: flex;
+                        width: 100%;
+                        border-radius: 8px;
+                        height: 600px;
+                    }
+
                 }
             }
 
@@ -116,6 +127,25 @@ body {
                 width: 485px;
                 margin-left: 64px;
 
+                .info-and-button {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $fourthfontcolor;
+
+                    .info {
+                        width: 100%;
+                        margin-top: 22.36px;
+                    }
+
+                    .mobile-only {
+                        display: none;
+                    }
+                }
+
+                .view-more {
+                    display: none;
+                }
+
                 .catalog-element {
                     font-size: 26px;
                     font-weight: 400;
@@ -123,11 +153,17 @@ body {
                     color: $firstfontcolor;
                 }
 
-                .catalog-price {
-                    font-size: 20px;
-                    font-weight: 500;
-                    color: $secondfontcolor;
-                    margin-top: 23px;
+                .price-share {
+                    .catalog-price {
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: $secondfontcolor;
+                        margin-top: 23px;
+                    }
+
+                    .share-button {
+                        display: none;
+                    }
                 }
 
                 .review {
@@ -145,13 +181,6 @@ body {
                     }
                 }
 
-                .info {
-                    width: 484px;
-                    margin-top: 22.36px;
-                    font-weight: 400;
-                    font-size: 16px;
-                    color: $fourthfontcolor;
-                }
 
                 .buttons {
                     display: flex;
@@ -177,13 +206,13 @@ body {
                         background: #EFEFEF;
                         border-radius: 4px;
                         justify-content: space-between;
-                        
-                        .toggle-btn{
+
+                        .toggle-btn {
                             cursor: pointer;
                             background-color: transparent;
                             border: none;
                             margin-top: 16px;
-                            margin-left: 18px; 
+                            margin-left: 18px;
                             font-size: 16px;
                             font-weight: 400;
                             color: $fourthfontcolor;
@@ -191,6 +220,9 @@ body {
                     }
                 }
 
+                .hero-ended-line {
+                    display: none;
+                }
 
                 .icons {
                     display: flex;
@@ -252,6 +284,10 @@ body {
                 gap: 96px;
                 font-weight: 400;
                 font-size: 20px;
+
+                .link-mobile-only {
+                    display: none;
+                }
 
                 .nav-link {
                     text-decoration: none;
@@ -413,16 +449,26 @@ body {
             gap: 47px;
             font-weight: 400;
 
+            .continue {
+                display: none;
+            }
+
             .subhead {
                 margin-top: 112px;
                 font-size: 26px;
                 color: $firstfontcolor;
+
             }
 
             .first-boxes-part {
                 display: flex;
                 flex-direction: row;
                 gap: 54px;
+                width: 100%;
+
+                img {
+                    object-fit: cover;
+                }
 
 
                 nav {
@@ -436,6 +482,7 @@ body {
                         padding-top: 24px;
                     }
                 }
+
 
                 .catalog-price {
                     font-size: 20px;
@@ -474,11 +521,6 @@ body {
                 .hal-earings {
                     display: flex;
                     flex-direction: column;
-                    width: 380px;
-                    height: 380px;
-                    background-image: url('./assests/hal earings.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
                     border-radius: 8px;
 
                 }
@@ -486,22 +528,12 @@ body {
                 .plaine-necklace {
                     display: flex;
                     flex-direction: column;
-                    width: 380px;
-                    height: 380px;
-                    background-image: url('./assests/plaine necklace.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
                     border-radius: 8px;
                 }
 
                 .kaede-hear-pin {
                     display: flex;
                     flex-direction: column;
-                    width: 380px;
-                    height: 380px;
-                    background-image: url('./assests/kaede hear pin.png');
-                    background-size: cover;
-                    background-repeat: no-repeat;
                     border-radius: 8px;
 
                 }
@@ -556,22 +588,31 @@ body {
         }
 
         .lineitem {
-            width: 396px;
+            width: 100%;
             border: 0.1px solid $firstfontcolor;
             margin-top: 7px;
             display: flex;
             position: relative;
-            left: 68.27%;
             right: 0%;
 
         }
-
+        .input-group-2 {
+            display: none;
+    
+        }
         .second-footer-part {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             margin-top: 47px;
-
+            .ended-part {
+                display: flex;
+                flex-direction: row;
+            }
+    
+            .mobile-only {
+                display: none;
+            }
 
             .icons {
                 display: flex;
@@ -610,4 +651,350 @@ body {
         }
 
     }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 288px;
+
+        header {
+            margin-bottom: 10px;
+            padding-top: 0;
+
+            .headercontainer {
+                margin-top: 15px;
+                padding-top: 0;
+                margin-bottom: 0;
+
+                .logo {
+                    width: 99px;
+                    height: 36px;
+                }
+
+                .linkline {
+                    display: none;
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 17px;
+
+                    .mobile-only {
+                        display: block;
+                        background-color: transparent;
+                        border: none;
+                    }
+
+
+                }
+            }
+        }
+
+        .hero-container {
+            margin-top: 0;
+
+            .hero-first-subhead {
+                flex-direction: column;
+
+                .images-part {
+                    height: 374px;
+
+                    .left-part {
+                        display: none;
+
+                    }
+
+                    .right-part {
+                        img {
+                            width: 100%;
+                            height: 374px;
+                            border-radius: 8px;
+                            object-fit: cover;
+                        }
+
+                    }
+                }
+
+                .text-part {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 40px;
+
+                    .catalog-element {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+
+                    .price-share {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .catalog-price {
+                            font-size: 16px;
+                            line-height: 27px;
+                            margin-top: 5px;
+                        }
+
+                        .share-button {
+                            display: block;
+                            border: none;
+                            background-color: transparent;
+                        }
+
+                    }
+
+
+
+                    .review {
+                        display: none;
+                    }
+
+                    .info-and-button {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        font-size: 12px;
+                        line-height: 20px;
+
+                        .info {
+                            display: none;
+                        }
+
+                        .mobile-only {
+                            display: flex;
+                            font-size: 12px;
+                            line-height: 20px;
+                            margin-top: 16px;
+                        }
+
+                        .buttons {
+                            margin-top: 24px;
+
+                            .button-box {
+                                display: none;
+                            }
+
+                            .cartbutton {
+                                width: 100%;
+                                height: 32px;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .view-more {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                        margin-top: 6px;
+
+                        .text {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: $secondfontcolor;
+                        }
+
+                        button {
+                            border: none;
+                            background-color: transparent;
+                            width: 5px;
+                        }
+                    }
+
+                    .hero-ended-line {
+                        display: flex;
+                        width: 100%;
+                        border: 1px solid $line-color;
+                        margin-top: 14px;
+                    }
+
+                    .icons {
+                        display: none;
+                    }
+
+                    .first-end-part {
+                        display: none;
+                    }
+
+                    .second-end-part {
+                        display: none;
+                    }
+                }
+            }
+
+            .hero-second-subhead {
+                margin-top: 19px;
+
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+
+                    .link-button {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .nav-link {
+                        color: $firstfontcolor;
+
+                    }
+
+                    .link-mobile-only {
+                        display: flex;
+                        border: none;
+                        background-color: transparent;
+                        transform: rotate(90deg);
+                    }
+                }
+
+                .hero-ended-line {
+                    display: flex;
+                    width: 100%;
+                    border: 1px solid $line-color;
+                    margin-top: 14px;
+                }
+
+                .text-boxes {
+                    display: none;
+                }
+            }
+
+            .hero-third-subhead {
+                gap: 13px;
+
+                .continue {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .text {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: $secondfontcolor;
+                    }
+                    button{
+                        border: none;
+                        background-color: transparent;
+
+                    }
+                }
+
+                .subhead {
+                    margin-top: 21px;
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+
+                .first-boxes-part {
+                    overflow-x: auto;
+                    gap: 12px;
+
+                    .add-to-cart-button {
+                        font-weight: 400;
+                        font-size: 12px;
+                        height: 30px;
+                    }
+
+                    img {
+                        width: 136px;
+                        height: 136px;
+                    }
+
+                    nav {
+                        margin-top: 6px;
+
+                        .catalog-element {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+
+                    .catalog-price {
+                        font-size: 12px;
+                        line-height: 20px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 70px;
+            .lineitem {
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+            .input-group-2 {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-size: 12px;
+                line-height: 20px;
+                margin-top: 16px;
+            }
+            .first-footer-line {
+                display: none;
+            }
+            .first-footer-part {
+                flex-direction: column-reverse;
+                gap: 40px;
+                margin-top: 92px;
+                font-size: 12px;
+                line-height: 20px;
+                .emailpart {
+                    gap: 80px;
+                    button img {
+                        width: 15px;
+                    }
+                }
+                nav {
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+             .second-footer-part {
+                flex-direction: column-reverse;
+                font-size: 12px;
+                line-height: 20px;
+                .text {
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-top: 36px;
+                }
+                .mobile-only {
+                    display: flex;
+                }
+                .icons {
+                    gap: 16.33px;
+                    button img {
+                        width: 12px;
+                        height: 12px;
+                    }
+                
+                }
+                .ended-part {
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-top: 32px;
+                }
+            }
+        
+        }
+    
+    }
+
+
 }

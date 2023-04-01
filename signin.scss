@@ -55,6 +55,9 @@ body {
                 margin-right: 48px;
             }
 
+            .logo {
+                width: 158px;
+            }
 
 
             .icons {
@@ -68,10 +71,26 @@ body {
                     border: none;
                     background-color: transparent;
                 }
+            }
 
+            .buttons {
+                display: none;
 
+                .mobile-only {
+                    display: none;
+                }
             }
         }
+
+        .input-group {
+            display: none;
+
+            .mobile-only {
+                display: none;
+            }
+
+        }
+
     }
 
     .hero-container {
@@ -206,7 +225,7 @@ body {
         margin-top: 250px;
 
         .first-footer-line {
-            width: 1248px;
+            width: 100%;
             border: 1px solid $line-color;
             margin-top: 253px;
         }
@@ -247,13 +266,17 @@ body {
         }
 
         .lineitem {
-            width: 396px;
+            width: 100%;
             border: 0.1px solid $firstfontcolor;
             margin-top: 7px;
             display: flex;
             position: relative;
-            left: 68.27%;
             right: 0%;
+
+        }
+
+        .input-group-2 {
+            display: none;
 
         }
 
@@ -263,6 +286,14 @@ body {
             justify-content: space-between;
             margin-top: 47px;
 
+            .ended-part {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .mobile-only {
+                display: none;
+            }
 
             .icons {
                 display: flex;
@@ -301,4 +332,211 @@ body {
         }
 
     }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 288px;
+
+        header {
+            margin-bottom: 10px;
+            padding-top: 0;
+
+            .headercontainer {
+                margin-top: 15px;
+                padding-top: 0;
+                margin-bottom: 0;
+
+                .logo {
+                    width: 99px;
+                    height: 36px;
+                }
+
+                .linkline {
+                    display: none;
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 17px;
+
+                    .mobile-only {
+                        display: block;
+                        background-color: transparent;
+                        border: none;
+                    }
+
+                }
+            }
+
+            .input-group {
+                display: flex;
+                flex-direction: row;
+                margin-top: 9px;
+                width: 100%;
+                height: 32px;
+                gap: 8px;
+                background: #EFEFEF;
+                border-radius: 4px;
+                padding-left: 10px;
+
+                .mobile-only {
+                    display: block;
+                    border: none;
+                    outline: none;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $fourthfontcolor;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .hero-container {
+            margin-top: 24px;
+
+            .subhead {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            .input-group {
+                width: 100%;
+                font-size: 12px;
+                line-height: 20px;
+                .input-field{
+                    padding: 5px 0px;
+                }
+            }
+
+            .input-group-2 {
+                width: 100%;
+                margin-top:22px ;
+                span {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+
+            .submit {
+                width: 100%;
+                height: 32px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                margin-top: 12px;
+            }
+
+            nav {
+                .ended-text {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+
+            .seperation-part {
+                width: 100%;
+                .text{
+                  font-size: 12px;
+                }
+            }
+
+            .no-account {
+                font-size: 12px;
+                line-height: 20px;
+
+                nav {
+                    .register {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 70px;
+
+            .lineitem {
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+
+            .input-group-2 {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-size: 12px;
+                line-height: 20px;
+                margin-top: 16px;
+            }
+
+            .first-footer-line {
+                display: none;
+            }
+
+            .first-footer-part {
+                flex-direction: column-reverse;
+                gap: 40px;
+                margin-top: 90px;
+                font-size: 12px;
+                line-height: 20px;
+
+                .emailpart {
+                    gap: 80px;
+
+                    button img {
+                        width: 15px;
+                    }
+                }
+
+                nav {
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+
+            .second-footer-part {
+                flex-direction: column-reverse;
+                font-size: 12px;
+                line-height: 20px;
+
+                .text {
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-top: 36px;
+                }
+
+                .mobile-only {
+                    display: flex;
+                }
+
+                .icons {
+                    gap: 16.33px;
+
+                    button img {
+                        width: 12px;
+                        height: 12px;
+                    }
+
+                }
+
+                .ended-part {
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-top: 32px;
+                }
+            }
+
+        }
+    }
+
 }

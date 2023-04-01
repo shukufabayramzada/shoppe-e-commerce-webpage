@@ -17,7 +17,7 @@
     <div class="container">
         <header>
             <div class="headercontainer">
-                <img src="./assests/SHOPPE.svg" alt="logo">
+                <img class="logo" src="./assests/SHOPPE.svg" alt="logo">
                 <div class="linkline">
                     <nav>
                         <a href="#" class="nav-link">Shop</a>
@@ -30,6 +30,10 @@
                         <button><img src="./assests/shopping cart.svg"></button>
                         <button><img src="./assests/account icon.svg"></button>
                     </div>
+                </div>
+                <div class="buttons">
+                    <button class="mobile-only"><img src="./assests/shopping cart.svg"></button>
+                    <button class="mobile-only"><img src="./assests/Group.svg"></button>
                 </div>
             </div>
             <div class="header-ended-line"></div>
@@ -49,7 +53,10 @@
                 </div>
                 <div class="text-part">
                     <div class="catalog-element">Lira Earrings</div>
-                    <div class="catalog-price">$ 20,00</div>
+                    <div class="price-share">
+                        <div class="catalog-price">$ 20,00</div>
+                        <button class="share-button"><img src="./assests/share.svg"></button>
+                    </div>
                     <div class="review">
                         <div class="stars">
                             <img src="./assests/star.svg">
@@ -60,19 +67,30 @@
                         </div>
                         <div>1 customer review</div>
                     </div>
-                    <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a
-                        volutpat
-                        hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget
-                        arcu facilisis consequat sed eu felis.</div>
-                    <div class="buttons">
-                        <div class="button-box">
-                            <button class="toggle-btn">-</button>
-                            <button class="toggle-btn">1</button>
-                            <button class="toggle-btn">+</button>
+                    <div class="info-and-button">
+                        <div class="mobile-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            placerat,...</div>
+                        <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat,
+                            augue a
+                            volutpat
+                            hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris
+                            eget
+                            arcu facilisis consequat sed eu felis.</div>
+                        <div class="buttons">
+                            <div class="button-box">
+                                <button class="toggle-btn">-</button>
+                                <button class="toggle-btn">1</button>
+                                <button class="toggle-btn">+</button>
+                            </div>
+                            <button class="cartbutton">ADD TO CART</button>
                         </div>
-                        <button class="cartbutton">ADD TO CART</button>
-                    </div>
 
+                    </div>
+                    <div class="view-more">
+                        <div class="text">View more</div>
+                        <button>></button>
+                    </div>
+                    <div class="hero-ended-line"></div>
                     <div class="icons">
                         <button><img src="./assests/email icon.svg"></button>
                         <button><img src="./assests/facebook.svg"></button>
@@ -92,10 +110,20 @@
             </div>
             <div class="hero-second-subhead">
                 <nav>
-                    <a href="#" class="nav-link">Description</a>
-                    <a href="#" class="nav-link">Aditional information </a>
-                    <a href="#" class="link">Reviews(0)</a>
+                    <div class="link-button">
+                        <a href="#" class="nav-link">Description</a>
+                        <button class="link-mobile-only">></button>
+                    </div>
+                    <div class="link-button">
+                        <a href="#" class="nav-link">Aditional information </a>
+                        <button class="link-mobile-only">></button>
+                    </div>
+                    <div class="link-button">
+                        <a href="#" class="link">Reviews(0)</a>
+                        <button class="link-mobile-only">></button>
+                    </div>
                 </nav>
+                <div class="hero-ended-line"></div>
                 <div class="text-boxes">
                     <div class="left-text-box">
                         <div class="subhead">2 Reviews for lira earings</div>
@@ -187,6 +215,10 @@
                         <div class="catalog-price">$ 30,00</div>
                     </div>
                 </div>
+                <div class="continue">
+                    <div class="text">Continue shopping</div>
+                    <button>></button>
+                </div>
             </div>
         </div>
         <section class="footer-section">
@@ -197,12 +229,19 @@
                     <a href="#" class="nav-link">TERMS OF SERVICES</a>
                     <a href="#" class="nav-link">SHIPPING AND RETURNS</a>
                 </nav>
-                <div class="emailpart">
-                    <div>Give an email, get the newsletter.</div>
-                    <button><img src="./assests/arrow.svg"></button>
+                <div class="check-part">
+                    <div class="emailpart">
+                        <div>Give an email, get the newsletter.</div>
+                        <button><img src="./assests/arrow.svg"></button>
+                    </div>
+                     <div class="lineitem"></div>
+                <div class="input-group-2">
+                    <input type="checkbox" class="checkbox"><span>i agree to the website’s terms and
+                        conditions</span>
                 </div>
+                </div>
+               
             </div>
-            <div class="lineitem"></div>
             <div class="second-footer-part">
                 <div class="text">
                     <div class="textbold">© 2021 Shelly.</div>
@@ -214,11 +253,14 @@
                         <a href="#" class="nav-link">privacy policy.</a>
                     </nav>
                 </div>
-                <div class="icons">
-                    <button><img src="./assests/linkedin.svg"></button>
-                    <button><img src="./assests/facebook.svg"></button>
-                    <button><img src="./assests/instagram.svg"></button>
-                    <button><img src="./assests/twitter.svg"></button>
+                <div class="ended-part">
+                    <div class="mobile-only">Follow us</div>
+                    <div class="icons">
+                        <button><img src="./assests/linkedin.svg"></button>
+                        <button><img src="./assests/facebook.svg"></button>
+                        <button><img src="./assests/instagram.svg"></button>
+                        <button><img src="./assests/twitter.svg"></button>
+                    </div>
                 </div>
             </div>
         </section>
