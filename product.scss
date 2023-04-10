@@ -545,7 +545,7 @@ body {
 
     .footer-section {
         margin-top: 345px;
-
+        margin-bottom: 92px;
         .first-footer-line {
             width: 1248px;
             border: 1px solid $line-color;
@@ -579,6 +579,12 @@ body {
                 flex-direction: row;
                 gap: 128px;
 
+                .suggest {
+                    outline: none;
+                    border: none;
+                    width: 243px;
+                }
+
                 button {
                     width: 25px;
                     border: none;
@@ -596,20 +602,23 @@ body {
             right: 0%;
 
         }
+
         .input-group-2 {
             display: none;
-    
+
         }
+
         .second-footer-part {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             margin-top: 47px;
+
             .ended-part {
                 display: flex;
                 flex-direction: row;
             }
-    
+
             .mobile-only {
                 display: none;
             }
@@ -881,7 +890,8 @@ body {
                         line-height: 20px;
                         color: $secondfontcolor;
                     }
-                    button{
+
+                    button {
                         border: none;
                         background-color: transparent;
 
@@ -932,11 +942,14 @@ body {
             flex-direction: column;
             width: 100%;
             margin-top: 70px;
+            margin-bottom: 19px;
+
             .lineitem {
                 width: 100%;
                 left: 0;
                 right: 0;
             }
+
             .input-group-2 {
                 display: flex;
                 align-items: center;
@@ -945,55 +958,72 @@ body {
                 line-height: 20px;
                 margin-top: 16px;
             }
+
             .first-footer-line {
                 display: none;
             }
+
             .first-footer-part {
                 flex-direction: column-reverse;
                 gap: 40px;
                 margin-top: 92px;
                 font-size: 12px;
                 line-height: 20px;
+
                 .emailpart {
                     gap: 80px;
+
+                    .suggest {
+                        width: 182px;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+
                     button img {
                         width: 15px;
                     }
                 }
+
                 nav {
                     flex-direction: column;
                     gap: 8px;
                 }
             }
-             .second-footer-part {
+
+            .second-footer-part {
                 flex-direction: column-reverse;
                 font-size: 12px;
                 line-height: 20px;
+
                 .text {
                     font-size: 12px;
                     line-height: 20px;
                     margin-top: 36px;
                 }
+
                 .mobile-only {
                     display: flex;
                 }
+
                 .icons {
                     gap: 16.33px;
+
                     button img {
                         width: 12px;
                         height: 12px;
                     }
-                
+
                 }
+
                 .ended-part {
                     width: 100%;
                     justify-content: space-between;
                     margin-top: 32px;
                 }
             }
-        
+
         }
-    
+
     }
 
 

@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <form>
     <div class="container">
         <header>
             <div class="headercontainer">
@@ -44,15 +45,16 @@
         <div class="hero-container">
             <div class="subhead">Register</div>
             <form class="input-group">
-                <input type="text" class="input-field" placeholder="Username" required>
-                <input type="email" class="input-field" placeholder="Email Address" required>
-                <input type="password" class="input-field" placeholder="Password" required>
-                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input id= "username" type="text" class="input-field" placeholder="Username" >
+                <p id="usernameError"></p>
+                <input id="email-add" type="text" class="input-field" placeholder="Email Address" >
+                <input  id="password" type="password" class="input-field" placeholder="Password" >
+                <input id="confirm" type="password" class="input-field" placeholder="Confirm Password">
             </form>
             <div class="input-group-2">
                 <input type="checkbox" class="checkbox"><span>Remember me</span>
             </div>
-            <button type="submit" class="submit">Register</button>
+            <button id='register'type="submit" class="submit">Register</button>
         </div>
         <section class="footer-section">
             <div class="first-footer-line"></div>
@@ -64,7 +66,7 @@
                 </nav>
                 <div class="check-part">
                     <div class="emailpart">
-                        <div>Give an email, get the newsletter.</div>
+                        <input type="text" class="suggest" placeholder="Give an email, get the newsletter.">
                         <button><img src="./assests/arrow.svg"></button>
                     </div>
                     <div class="lineitem"></div>
@@ -94,10 +96,10 @@
                         <button><img src="./assests/twitter.svg"></button>
                     </div>
                 </div>
-
             </div>
         </section>
     </div>
+    </form>
+    <script src="./register.js"></script>
 </body>
-
 </html>

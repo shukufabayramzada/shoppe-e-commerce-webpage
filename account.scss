@@ -202,6 +202,7 @@ body {
 
     .footer-section {
         margin-top: 208px;
+        margin-bottom: 92px;
 
         .first-footer-line {
             width: 100%;
@@ -235,7 +236,11 @@ body {
                 display: flex;
                 flex-direction: row;
                 gap: 128px;
-
+                .suggest {
+                    outline: none;
+                    border: none;
+                    width: 243px;
+                }
                 button {
                     width: 25px;
                     border: none;
@@ -444,6 +449,8 @@ body {
             flex-direction: column;
             width: 100%;
             margin-top: 70px;
+            margin-bottom: 19px;
+
             .lineitem {
                 width: 100%;
                 left: 0;
@@ -468,6 +475,11 @@ body {
                 line-height: 20px;
                 .emailpart {
                     gap: 80px;
+                    .suggest {
+                        width: 182px;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
                     button img {
                         width: 15px;
                     }
